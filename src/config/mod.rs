@@ -38,7 +38,7 @@ impl DefaultOptions {
     /// | Byte limit | Endianness | Int Encoding | Trailing Behavior |
     /// |------------|------------|--------------|-------------------|
     /// | Unlimited  | Little     | Varint       | Reject            |
-    pub fn new() -> DefaultOptions {
+    pub const fn new() -> DefaultOptions {
         DefaultOptions(Infinite)
     }
 }
